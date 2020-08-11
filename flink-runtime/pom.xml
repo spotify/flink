@@ -249,7 +249,7 @@ under the License.
 			<!-- exclusions for dependency conversion -->
 			<exclusions>
 				<exclusion>
-					<groupId>com.esotericsoftware.kryo</groupId>
+					<groupId>com.esotericsoftware</groupId>
 					<artifactId>kryo</artifactId>
 				</exclusion>
 				<exclusion>
