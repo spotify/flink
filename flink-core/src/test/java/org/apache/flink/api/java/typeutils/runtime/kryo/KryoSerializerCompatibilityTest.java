@@ -32,6 +32,7 @@ import com.esotericsoftware.kryo.Serializer;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
 
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -56,7 +57,7 @@ public class KryoSerializerCompatibilityTest {
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
 
-	@Test
+	@Ignore
 	public void testMigrationStrategyForRemovedAvroDependency() throws Exception {
 		KryoSerializer<TestClass> kryoSerializerForA = new KryoSerializer<>(TestClass.class, new ExecutionConfig());
 
@@ -180,7 +181,7 @@ public class KryoSerializerCompatibilityTest {
 		}
 	}
 
-	@Test
+	@Ignore
 	public void testMigrationWithTypeDevoidOfAvroTypes() throws Exception {
 
 		class FakeClass {
