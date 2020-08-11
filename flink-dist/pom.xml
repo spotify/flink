@@ -452,10 +452,10 @@ under the License.
 
 	<profiles>
 		<profile>
-			<id>scala-2.11</id>
+			<id>scala-2.12</id>
 			<activation>
 				<property>
-					<name>!scala-2.12</name>
+					<name>!scala-2.11</name>
 				</property>
 			</activation>
 			<!-- Scala Shell doesn't currently work with Scala 2.12 so only include
