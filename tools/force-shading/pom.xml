@@ -107,4 +107,17 @@ under the License.
 		</profile>
 	</profiles>
 
+	<distributionManagement>
+		<repository>
+			<id>central-upload</id>
+			<name>libs-release-local</name>
+			<url>https://artifactory.spotify.net/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots-upload</id>
+			<name>libs-snapshot-local</name>
+			<url>https://artifactory.spotify.net/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
