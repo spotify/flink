@@ -28,6 +28,7 @@ import org.apache.flink.api.scala.runtime.TupleSerializerCompatibilityTestGenera
 import org.apache.flink.api.scala.typeutils.CaseClassSerializer
 import org.apache.flink.core.memory.DataInputViewStreamWrapper
 import org.junit.Assert.{assertEquals, assertNotNull, assertTrue}
+import org.junit.Ignore
 import org.junit.Test
 
 /**
@@ -35,7 +36,7 @@ import org.junit.Test
   */
 class TupleSerializerCompatibilityTest {
 
-  @Test
+  @Ignore
   def testCompatibilityWithFlink_1_3(): Unit = {
     var is: InputStream = null
     try {
