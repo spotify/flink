@@ -152,5 +152,5 @@ if [ "$SCALA_VERSION" == "none" ]; then
   make_python_release
 else
   make_binary_release "$SCALA_VERSION"
-  make_python_release
+  # make_python_release
 fi
