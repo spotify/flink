@@ -81,6 +81,7 @@ under the License.
 									<rules>
 										<requireMavenVersion>
 											<!-- maven version must be lower than 3.3. See FLINK-3158 -->
+											<!-- Neville: FLINK-3158 is closed, upping the limit to disable -->
 											<version>(,3.7)</version>
 										</requireMavenVersion>
 									</rules>
