@@ -21,8 +21,10 @@
 set -e
 
 # Deploy Beam Flink runner dependencies
+mvn install -DskipTests -am -pl flink-clients,flink-core,flink-metrics/flink-metrics-core,flink-java,flink-runtime,flink-streaming-java
 mvn deploy -Pdocs-and-source -DskipTests -am -pl flink-clients,flink-core,flink-metrics/flink-metrics-core,flink-java,flink-runtime,flink-streaming-java $@
 
 # Deploy flink-dist
 cd flink-dist
+mvn install
 mvn deploy $@
